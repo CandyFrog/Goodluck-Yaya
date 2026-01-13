@@ -12,7 +12,7 @@ setiap irama,
 dan setiap detik di panggung.
 
 Tampil dengan percaya diri.
-Kamu udah sejauh ini. 🎇`;
+Kamu udah sejauh ini. (๑•̀ᗝ•́)૭`;
 
 // ========== VARIABLES ==========
 const envelopeScreen = document.getElementById('envelope-screen');
@@ -145,4 +145,5 @@ function startConfetti() {
 // ========== INITIALIZE FEATHER ICONS ==========
 document.addEventListener('DOMContentLoaded', () => {
   feather.replace();
+
 });
