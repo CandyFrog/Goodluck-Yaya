@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Luck Yaya!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ENVELOPE SCREEN -->
+    <div id="envelope-screen">
+      <div class="floating-hearts-bg">
+      </div>
+      
+      <div class="envelope-scene">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+          <div class="lid one"></div>
+          <div class="lid two"></div>
+          <div class="envelope"></div>
+          <div class="letter">
+            <div class="letter-hearts"></div>
+            <p>Untuk Yaya</p>
+            <div class="letter-sparkle"></div>
+          </div>
+        </div>
+        <p class="tap-instruction">Tap untuk membuka</p>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main-content">
+      <!-- Confetti Container -->
+      <div id="confetti-container"></div>
+
+      <!-- Music Control -->
+      <div class="music-control">
+        <button onclick="toggleMusic()" id="musicToggle" class="music-btn">
+          <i data-feather="play" id="musicIcon"></i>
+          <span id="musicText">Play Music</span>
+        </button>
+      </div>
+
+      <!-- Main Card -->
+      <div class="cute-card">
+        
+        <div class="card-header">
+          <div class="header-sparkles">
+          </div>
+          <h1 class="main-title">Good Luck!</h1>
+          <p class="subtitle">You’re going to shine</p>
+        </div>
+
+        <div class="message-container">
+          <div class="message-deco">🎀</div>
+          <div id="typed-message" class="typed-text"></div>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <div class="card-footer">
+          <div class="signature">
+            <p>You've got this!</p>
+          </div>
+          <div class="footer-hearts">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+      <source src="audio/lofi-background-music-336230.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Feather Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
